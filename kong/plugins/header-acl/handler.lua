@@ -1,5 +1,5 @@
 local BasePlugin = require "kong.plugins.base_plugin"
-local access = require "kong.plugins.headeracl.access"
+local access = require "kong.plugins.header-acl.access"
 
 local HeaderACLPlugin =  BasePlugin:extend()
 

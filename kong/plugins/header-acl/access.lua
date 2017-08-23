@@ -1,13 +1,11 @@
 local utils = require "kong.tools.utils"
 local responses = require "kong.tools.responses"
-local printable_mt = require "kong.tools.printable"
 
 local ngx_get_headers = ngx.req.get_headers
 local ngx_re_match = ngx.re.match
 local ngx_re_gmatch = ngx.re.gmatch
 local ngx_re_gsub = ngx.re.gsub
 local base64_decode = ngx.base64_decode
-local table_contact = utils.contact
 
 -- There are two types of rules, ANY rules and ALL rules.
 -- ANY rules allow for any of the rules in the set to pass.
